@@ -1,1 +1,1 @@
-Blog enginer using Next.js and Mdx
+Blog engine using Next.js and Mdx
