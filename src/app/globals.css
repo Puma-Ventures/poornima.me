@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    /* background-color: rgb(226, 232, 240); */
+    /* font-family: 'Work Sans', sans-serif; */
+    /* font-family: 'DM Sans', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: 'slnt' 0;
+}
+
+/* madd */
+
+/* :root {
+    --primary-color-alt: #100e2b;
+    --primary-color: #161439;
+    --primary-text-color: white;
+
+    --header-color: rgba(255, 255, 255, 0.03);
+    --header-text-color: white;
+
+    --theme-hero-color: rgba(20, 20, 20, 0.1);
+    --theme-hero-text-color: white;
+
+    --hightlight-bg-color: #db2877;
+    --hightlight-color: white;
+
+    --hightlight-wave1-color: #871400;
+    --hightlight-wave2-color: #b61039;
+
+    --theme-logo-stoke: white;
+    --theme-logo-fill: #db2877;
+
+    --theme-section: rgb(253 224 71);
+    --theme-section-text: black;
+} */
+
+/* puma */
+
+:root {
+    --primary-color-alt: #35203d;
+    --primary-color: white;
+    --primary-text-color: black;
+
+    --header-color: rgb(38, 18, 49);
+    --header-text-color: black;
+
+    --theme-hero-color: rgba(20, 20, 20, 0.1);
+    --theme-hero-text-color: white;
+
+    --hightlight-bg-color: #ffffff;
+    --hightlight-color: #35203d;
+
+    --hightlight-wave1-color: #3b0e53;
+    --hightlight-wave2-color: #644873;
+
+    --theme-logo-stoke: white;
+    --theme-logo-fill: #db2877;
+
+    --theme-rounded: 0.7rem;
+    --theme-rounded-small: 0.2rem;
+
+    --theme-section: black;
+    --theme-section-text: white;
+
+    --footer-color: #23132f;
+    --footer-text-color: white;
+}
+
+.theme\:back-canvas {
+    background-color: var(--primary-color-alt) !important;
+}
+
+.theme\:text-primary {
+    color: var(--header-text-color) !important;
+}
+
+.theme\:post-body * {
+    color: var(--header-text-color) !important;
+}
+
+.theme\:hero {
+    background-color: var(--theme-hero-color) !important;
+    color: var(--theme-hero-text-color) !important;
+}
+
+.theme\:body {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+.theme\:header {
+    background-color: var(--header-color) !important;
+    color: var(--header-text-color) !important;
+}
+
+.theme\:menuItem:hover {
+    background-color: var(--hightlight-bg-color) !important;
+    color: var(--hightlight-color) !important;
+}
+
+.theme\:footer {
+    background-color: var(--footer-color) !important;
+    color: var(--footer-text-color) !important;
+}
+
+.theme\:section {
+    background-color: var(--theme-section) !important;
+    color: var(--theme-section-text) !important;
+    border-top-left-radius: var(--theme-rounded-small) !important;
+    border-top-right-radius: var(--theme-rounded-small) !important;
+}
+
+.theme\:section-line {
+    border-color: var(--theme-section) !important;
+}
+
+.theme\:logo-stroke {
+    stroke: var(--theme-logo-stoke) !important;
+    fill: var(--theme-logo-stoke) !important;
+}
+
+.theme\:logo-fill {
+    fill: var(--theme-logo-fill) !important;
+}
+
+.theme\:rounded {
+    border-radius: var(--theme-rounded) !important;
+}
+
+.theme\:rounded-small {
+    border-radius: var(--theme-rounded-small) !important;
+}
+
+::selection {
+    background-color: var(--hightlight-bg-color);
+    color: var(--hightlight-text-color);
+}
+
+/* img:not([src]),
+img[src=''] {
+    display: none;
+}
+
+object:not([data]),
+object[data=''] {
+    display: none;
+} */
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* min-height: 600px;
+background-image: url(/images/post-thinking.jpg);
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; */

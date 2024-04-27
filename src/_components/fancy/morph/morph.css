@@ -1,0 +1,28 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap'); */
+
+#morph-container {
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
+}
+
+#morph-text1,
+#morph-text2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    display: inline-block;
+
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: calc(6vmin);
+
+    /* @media (max-width: 600px) {
+        font-size: calc(15vmin);
+    } */
+
+    font-weight: 900;
+
+    text-align: center;
+    user-select: none;
+}

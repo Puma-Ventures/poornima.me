@@ -1,0 +1,48 @@
+---
+date: 2024-03-25
+---
+
+# The story behind Tinny Minny
+
+![Tinny Minny Logo](/images/tinny-minny.png)
+
+## The Why
+
+As new parents of twin boys, we had decided that daycare would be a necessity for us. What we had not anticipated was the lack of transparency, the extreme competition and the power imbalance between the providers and recipients. 6 months after the twins were born, our fears of not finding a daycare led to frantic Google searches, phone calls, waitlists, visits to daycares and mostly frustration with the process. The problem isn’t that there aren’t any spots available - the problem is that most people have a hard time finding even the ones that are.
+
+That’s when the idea of Tinny Minny came to mind. It aims to be the one stop solution for parents looking for childcare. Complete with a map based search, ability to save favourites and create lists, high definition pictures, verified information and reviews and the ability to directly communicate with childcare providers. Sounds pretty basic for 2023 right? But the solution was far from simple.
+
+## Behind the Scenes
+
+We quickly realized that information was scattered everywhere. Just within the lower mainland of BC, there are different resources for each health authority - Fraser Health, Vancouver and Richmond. Even the method of presenting information varied from lists and PDFs to map searches. The only resource that came close to providing the whole picture was the BC Child Care Map - but even that included information that wasn’t accurate or had missing information like the location manager’s name.
+
+### Market Analysis
+
+Before we jumped to any conclusions, we wanted to make sure we weren’t reinventing the wheel. We did a close review of what options were already available. The closest we got was a website called daycarebear.ca. It allowed you to search by postal code, provided the results as a list and even plotted those results on a map. It sorts by openings available, but that information was not always accurate. It is recommended often on daycare search Facebook groups by other moms - so what was missing? First of all the UX was extremely poor - in the age of Airbnb and Uber, there is a certain expectation about how a webpage looks and this website falls very short of the mark. The plus side is that it is a free service to parents but the down side is it posts a lot of ads, EVERYWHERE! It provides information about individual centres but the pictures are low definition and sometimes not available. Also, there is no way to create shortlists, favourites or contact a childcare provider through the website.
+
+### Creating the Database
+
+So the first step to solving this issue was to create a comprehensive database. It would include all the relevant information to create key filters that would be needed when any parent is looking for childcare. This meant extracting information from tables, cleaning up any errors in spellings, creating relational databases to include postal codes, geo locations, programs provided by age group, capacity and available openings. This took the majority of the time.
+
+The next step was to decide what features would be included in the MVP and whether or not building the caregiver facing app would be part of that MVP. This is where talking to real people helped.
+
+### Customer Interviews
+
+We had to validate that we were not the only parents who had this problem of finding a daycare. A quick search of Facebook brings up a number of “Find Childcare” groups by location. And the posts by moms (mostly) ranged from pleasant to desperate. So we knew we were not alone. I also spoke to a few fellow moms to understand their process of finding daycare. Again, information scattered everywhere - using Google to find childcares, asking friends, co-workers for recommendations and badgering childcare providers with incessant calls and emails seemed to be the norm.
+
+I also got in touch with a multi-age group childcare provider to understand their perspective on intake and the work involved. It turned out that their story isn’t too different either. Information came in from multiple avenues - prospective parents would reach out by email, phone calls, FB messages or even just walk in to get information. Some providers would try and maintain a waitlist, but parents would have their child waitlisted in multiple places and occasionally not respond when contacted by the provider. There are software options to manage waitlists - Kindertales, HiMama, Brightwheel are some of the popular daycare management softwares available. But they have to be manually updated, and there is no way to directly communicate with waitlisted parents through the software. However, with the number of parents desperately looking for childcare, filling spots was not a big challenge for providers. And there was very little incentive for a separate software just for maintaining “smart” waitlists.
+
+## Key Decisions
+
+Based on the available options and customer reviews we decided that building Tinny Minny was a worthwhile and much needed solution. Here are some of the key decisions we took in the building process -
+
+1. Build only the parent facing app for the MVP since the larger daycare centres currently have limited incentive to be “featured” on the website.
+2. Although the initial thought was to build Tinny Minny as an app to allow busy parents to easily access it on their phones, we decided to build it as a web app to avoid App Store/ Play store approval issues. This would also mean that Tinny Minny could be accessed on any device.
+3. Include a Kanban style system to help parents organize their saved childcare providers.
+4. Complete a beta test with a few early adopters to allow for any quick changes or bug fixes
+5. Include metrics to track new registrations, zip codes associated with the most searches, referrals and user satisfaction.
+6. Launch as a freemium app - parents can register for free and a monthly subscription will be added to access features like creating shortlists, adding notes to individual centres and contacting the centres directly from the app.
+
+## Progress to date
+
+As of writing this blog post, the database for the Tri-Cities area in the lower Mainland and a map based search function has been built. The next steps would be to market the product on social media sites and gather initial interest. After completing a beta test with 20-30 users, the product would be launched with a goal of gathering at least 100 registrations.
